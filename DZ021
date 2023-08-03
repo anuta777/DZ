@@ -1,1 +1,38 @@
 
+// Напишите программу,которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+Console.WriteLine("Введите шесть координат");
+
+int Xa = ReadInt("Введите координату первой точки:");
+
+int Ya = ReadInt("Введите координату первой  точки:");
+
+int Za = ReadInt("Введите координаты первой  точки:");
+
+int Xb = ReadInt("Введите координаты второй точки:");
+
+int Yb = ReadInt("Введите координаты второй точки:");
+
+int Zb = ReadInt("Введите координаты второй точки:");
+
+int A = Xb -Xa;
+
+int B = Yb -Ya;
+
+int C = Zb - Za;
+
+double length = Math.Sqrt(A* A+ B* B+ C * C);
+
+Console.WriteLine($"Длина отрезка , -> {length}");
+
+int ReadInt(string message)
+
+{
+
+    Console.Write(message);
+
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+
+// A(3,6,8); B(2,1,-7), -> 15.84
+//A(7,-5,0); B(1,-1,9), -> 11.53
