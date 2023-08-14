@@ -1,0 +1,38 @@
+// Напишите цыкл,который принимает н вход два числа (А и B) и выводит число А в натуральную степень B.
+Console.Clear();
+
+int numberA = ReadInt("введите число A: ");
+
+int numberB =ReadInt("Введите число B: ");
+
+ToDegree(numberA, numberB);
+
+
+//функция возведения в степень.
+
+void ToDegree(int a, int b)
+
+{
+
+    int result = 1;
+
+    for (int i = 1; i <= b; i++)
+
+    {
+
+        result = result * a;
+
+    }
+    Console.WriteLine("result");
+}
+
+//Функция ввода.
+int ReadInt(string message)
+
+{
+
+    Console.WriteLine("message");
+
+    return Convert.ToInt32(Console.ReadLine());
+
+}
